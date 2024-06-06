@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise !</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #surprise-image {
+            max-width: 80%;
+            max-height: 80%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="surprise-button">Briti a Safae txofi akbar W9 flwojod?.. cliquer hna!</button>
+        <img id="surprise-image" src="image_1.jpg" height="500px" width="500px" alt="Surprise !">
+    </div>
+
+    <script>
+        document.getElementById('surprise-button').addEventListener('click', function() {
+            var image = document.getElementById('surprise-image');
+            image.style.opacity = 1;
+        });
+    </script>
+        
+</body>
+</html>
